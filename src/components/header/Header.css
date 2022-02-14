@@ -1,22 +1,18 @@
-.header {
+.header{
+    background-image: url('../../assets/bluetexture.jpg');
+    height: 400px;
+}
+
+.header-top {
     display: flex;
     width: 100%;
-    height: 300px;
-    background-color: #1559e8;
     flex: 1;
     flex-direction: row;
 }
 
-.header-title {
-    font-family: 'Roboto Black';
-    font-size: 64px;
-    color: #ffffff;
-    text-align: left;
-    margin-right: 100px;
-}
-
 .header-text {
     margin-left: 20%;
+    margin-top: 2%;
 }
 
 .logo {
@@ -29,6 +25,7 @@
     color: #000000;
     text-align: left;
     white-space: pre-line;
+    width: 75%;
 }
 
 .header-h2 {

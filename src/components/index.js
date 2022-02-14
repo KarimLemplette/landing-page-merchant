@@ -1,14 +1,12 @@
-import Header from './header';
-import Subheader from './subheader';
 import Navbar from './navbar';
+import Header from './header';
 import Button from './button';
 import Body from './body';
 import Footer from './footer';
 
 export {
-    Header,
-    Subheader,
     Navbar,
+    Header,
     Button,
     Body,
     Footer

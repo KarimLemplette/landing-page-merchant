@@ -13,8 +13,11 @@ function Body() {
     return (
         <section className='body'>
             <section className='row'>
-                <section>
-                    <h2 className='body-h2'>{'L’article que vous recherchez \n est dèjà dans un commerce \n à proximité'}</h2>
+                <section class='row-text-left'>
+                    <h2 className='body-h2'>
+                        L’article que vous recherchez
+                        est dèjà dans <span style={{color: '#ffc107'}}>un commerce à proximité</span>
+                    </h2>
                     <p className='body-p'>{'Lemplette vous met en relation directe avec vos \n commerces locaux. \n La majorité des commandes en ligne effectuées se \n trouvent déjà probablement dans un des commerces \n qui vous entourent.'}</p>
                 </section>
                 <section>
@@ -63,7 +66,7 @@ function Body() {
                     <h2 style={{color:'#ffc107'}}>Des commerçants engagés</h2>
                     <h2>
                         <span style={{color: '#ffc107'}}>"</span>
-                        <b>C’est moins cher en ligne</b> 
+                        <b>C’est moins cher en ligne</b>
                         <span style={{color: '#ffc107'}}>”</span>
                     </h2>
                     <p>
