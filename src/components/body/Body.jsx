@@ -8,33 +8,45 @@ import number2 from '../../assets/number2.png';
 import number3 from '../../assets/number3.png';
 import search from '../../assets/search.png';
 import sourire from '../../assets/sourire.png';
+import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 function Body() {
     return (
         <section className='body'>
-            <section className='row'>
-                <section class='row-text-left'>
-                    <h2 className='body-h2'>
-                        L’article que vous recherchez
-                        est dèjà dans <span style={{color: '#ffc107'}}>un commerce à proximité</span>
-                    </h2>
-                    <p className='body-p'>{'Lemplette vous met en relation directe avec vos \n commerces locaux. \n La majorité des commandes en ligne effectuées se \n trouvent déjà probablement dans un des commerces \n qui vous entourent.'}</p>
-                </section>
-                <section>
-                    <img src={bodyimg1} alt='' className='img'/>
-                </section>
-            </section>
-            <section className='row2'>
-                <section>
-                    <img src={bodyimg2} alt='' className='img'/>
-                </section>
-                <section>
-                    <h2 className='body-h2'>{'Réconcilier local & digital'}</h2>
-                    <h3 className='body-h3'>{'Le ecommerce à votre porte'}</h3>
-                    <p className='body-p'>{'Les commerces de proximité sont beaucoup moins visibles sur internet que les géants du e-commerce, Lemplette offre aux commerçants une plateforme permettant de répondre en direct à toutes vos demandes.'}</p>
-                    <a href='/'> Contacter des commerces environnants </a>
-                </section>
-            </section>
+            <MDBContainer breakpoint="md">
+                <MDBRow>
+                    <MDBCol size='md' className='col-md-6'>
+                        <h2 className='body-h2'>
+                            L’article que vous recherchez
+                            est dèjà dans <span style={{color: '#ffc107'}}>un commerce à proximité</span>
+                        </h2>
+                        <p className='body-p'>
+                            Lemplette vous met en relation directe avec vos commerces locaux. 
+                            La majorité des commandes en ligne effectuées se 
+                            trouvent déjà probablement dans un des commerces qui vous entourent.
+                        </p>
+                    </MDBCol>
+                    <MDBCol size='md' className='col-md-6'>
+                        <img src={bodyimg1} alt='' className='img-fluid' />
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
+            <MDBContainer breakpoint="md">
+                <MDBRow>
+                    <MDBCol size='md' className='col-md-6'>
+                        <img src={bodyimg2} alt='' className='img-fluid'/>
+                    </MDBCol>
+                    <MDBCol size='md' className='col-md-6'>
+                        <h2 className='body-h2'>Réconcilier local & digital</h2>
+                        <h3 className='body-h3'>Le ecommerce à votre porte</h3>
+                        <p className='body-p'>
+                            Les commerces de proximité sont beaucoup moins visibles sur internet que les géants du e-commerce, 
+                            Lemplette offre aux commerçants une plateforme permettant de répondre en direct à toutes vos demandes.
+                        </p>
+                        <a href='/'> Contacter des commerces environnants </a>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
             <section className='row3'>
                 <section className='text'>
                     <section className='row3-text'>
