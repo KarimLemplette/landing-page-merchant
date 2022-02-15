@@ -1,5 +1,5 @@
 .row {
-    margin-left: 20%;
+    margin-left: 0%;
     display: flex;
     text-align: left;
     white-space: pre-line;
@@ -8,7 +8,7 @@
 }
 
 .row2 {
-    margin-left: 20%;
+    margin-left: 0%;
     display: flex;
     text-align: left;
     white-space: pre-line;
@@ -29,7 +29,7 @@
     margin-left: 20%;
 }
 
-.row3-h2 {
+.row3-h1 {
     color: #ffffff;
 }
 
@@ -77,4 +77,20 @@
 .row4-img {
     margin-top: 5%;
     margin-left: 5%;
+}
+
+.h3-white {
+    color: #ffffff;
+}
+
+.h3-black {
+    color: #000000;
+}
+
+.p-white {
+    color: #ffffff;
+}
+
+.p-black {
+    color: #000000;
 }

@@ -5,10 +5,10 @@ import './Navbar.css';
 function Navbar() {
     return (
         <section className="navbar-test">
-            <MDBBtn rounded className='mx-2' color='secondary'>
+            <MDBBtn rounded className='mx-2 mt-3' color='secondary'>
                 Les commercants
             </MDBBtn>
-            <MDBBtn rounded className='mx-2' color='warning'>
+            <MDBBtn rounded className='mx-2 mt-3' color='warning'>
                 S'inscrire/Mon compte
             </MDBBtn>
         </section>
