@@ -1,17 +1,17 @@
 import React from 'react';
-import { MDBBtn } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBContainer } from 'mdb-react-ui-kit';
 import './Navbar.css';
 
 function Navbar() {
     return (
-        <section className="navbar-test">
+        <MDBContainer breakpoint="md" className='navbar-buttons'>
             <MDBBtn rounded className='mx-2 mt-3' color='secondary'>
                 Les commercants
             </MDBBtn>
             <MDBBtn rounded className='mx-2 mt-3' color='warning'>
                 S'inscrire/Mon compte
             </MDBBtn>
-        </section>
+        </MDBContainer>
     )
 }
 
