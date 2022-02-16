@@ -21,11 +21,11 @@ function Header() {
                             </p>
                         </MDBCol>
                         <MDBCol size='md' className='col-md-4 mt-5'>
-                            <img src={logo} className='logo' style={{maxWidth:'500px'}}/>
+                            <img src={logo} className='img-fluid'/>
                         </MDBCol>
                 </MDBRow>
                 <MDBRow>
-                    <MDBCol size='md' className='col-md-6 offset-md-4 mt-5 mb-5'>
+                    <MDBCol size='md' className='col-md-12 mt-5 mb-5 text-center'>
                         <MDBBtn rounded className='mx-2 btn btn-warning btn-lg'>
                             Déposer une demande
                         </MDBBtn>

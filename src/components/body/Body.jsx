@@ -8,8 +8,7 @@ import number3 from '../../assets/number3.png';
 import search from '../../assets/search.png';
 import sourire from '../../assets/sourire.png';
 import background from '../../assets/bluetexture.jpg';
-import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import { MDBBtn } from 'mdb-react-ui-kit';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdb-react-ui-kit';
 
 function Body() {
     return (
@@ -34,7 +33,7 @@ function Body() {
             </MDBContainer>
             <MDBContainer breakpoint="md">
                 <MDBRow className='d-flex align-items-center mb-3'> 
-                    <MDBCol className='col-md-5 mt-3'>
+                    <MDBCol className='col-md-5 mt-3 order-sm-first order-last'>
                         <img src={bodyimg2} alt='' className='img-fluid'/>
                     </MDBCol>
                     <MDBCol size='md' className='col-md-6 mt-3'>
@@ -86,20 +85,20 @@ function Body() {
                         <img src={number3} alt='' className='number'/>
                         <p className='p-white'>Payez via Lemplette et collectez votre produit chez un commerçant proche de chez vous.</p>
                     </MDBCol>
-                    <MDBCol className='col-md-4 mt-3'>
+                    <MDBCol size='md' className='col-md-4 mt-3'>
                         <img src={search} alt='' className='img-fluid'/>
                     </MDBCol>
                 </MDBRow>
                 <MDBCol className='col-md-12 mt-5 mb-5'>
-                    <MDBBtn rounded className='mx-2 btn btn-warning btn-lg'>
+                    <MDBBtn rounded className='mx-2 mb-5 btn btn-warning btn-lg'>
                         Lancer une recherche
                     </MDBBtn>
                 </MDBCol>
             </div>
-            <MDBContainer breakpoint="md">
-                <MDBRow className='mt-3 mb-3 '>
-                    <MDBCol className='col-md-6 offset-md-1 mt-5 mb-4'>
-                        <h2 style={{color:'#FFA900'}}>Des commerçants engagés</h2>
+            <MDBContainer breakpoint="sm">
+                <MDBRow className='d-flex align-items-center mb-3'>
+                    <MDBCol size='md' className='col-md-6 offset-md-1 mt-2 mb-4 text-end'>
+                        <h2 class="text-end" style={{color:'#FFA900'}}>Des commerçants engagés</h2>
                         <h3 className='h3-black'>
                         <span style={{color: '#ffc107'}}>"</span>
                         <b>C’est moins cher en ligne</b>
@@ -113,7 +112,7 @@ function Body() {
                         </p>
                         <a href='/'>Déclenchez une recherche</a>
                     </MDBCol>
-                    <MDBCol className='col-md-5 mt-5 mb-4'>
+                    <MDBCol className='col-md-5 mt-2 mb-4'>
                         <img src={sourire} alt='' className='img-fluid'/> 
                     </MDBCol>
                 </MDBRow>
