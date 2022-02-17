@@ -1,58 +1,106 @@
 import React from 'react';
 import './Footer.css';
+import background from '../../assets/bluetexture.jpg';
+import { MDBFooter, MDBContainer, MDBCol, MDBRow } from 'mdb-react-ui-kit';
 
 function Footer () {
   return (
-    <section className="footer">
-        <section className='footer-header'>
-            <h2>Lemplett<span style={{color: '#ffc107'}}>e</span>, le <span style={{color: '#ffc107'}}>e</span>Commerce Citoy<span style={{color: '#ffc107'}}>e</span>n</h2>
-            <hr className="footer-separator" />
-        </section>
-        <section className="footer-info">
-            <section className="footer-info-left">
-            <section className="footer-info-title">
-                À Propos
-            </section>
-            <section className="footer-info-text">
-                Pourquoi Lemplette ?
-                <br/>
-                Espace Presse
-                <br/>
-                On parle de nous
-                <br/>
-                Espace Carrière
-                <br/>
-                Blog
-            </section>        
-            </section>
-            <section className="footer-info-center">
-            <section className="footer-info-title">
-                Conditions
-            </section>
-            <section className="footer-info-text">
-                Mention Légales
-                <br/>
-                Confidentialité
-                <br/>
-                Cookies
-                <br/>
-                Près de chez vous
-                <br/>
-                Crédits
-            </section>
-            </section>
-            <section className="footer-info-right">
-                <section className="footer-info-title">
-                Aide
-                </section>
-                <section className="footer-info-text">
-                    FAQ
-                    <br/>
-                    Contact
-                </section>
-            </section>
-        </section>
-    </section>
+    <div style={{backgroundImage:`url(${background})`}}>
+        <MDBFooter className='text-center text-lg-start text-muted'>
+            <MDBContainer breakpoint="md" className='d-flex justify-content-center p-4'>
+                <div className='me-5 d-none d-lg-block'>
+                    <h2 className='footer-text'>
+                        Lemplett<span style={{color: '#ffc107'}}>e</span>, le <span style={{color: '#ffc107'}}>e</span>Commerce Citoy<span style={{color: '#ffc107'}}>e</span>n
+                    </h2>
+                </div>
+            </MDBContainer>
+            <MDBContainer breakpoint="md">
+                <MDBRow>
+                    <MDBCol className='col-md-3 offset-md-1'>
+                        <h5 className='fw-bold mb-4 footer-text'>À Propos</h5>
+                        <ul className='list-unstyled mb-0'>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Pourquoi Lemplette ?
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Espace Presse
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                On parle de nous
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Espace Carrière
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </MDBCol>
+                    <MDBCol className='col-md-3 offset-md-1'>
+                        <h5 className='fw-bold mb-4 footer-text'>Conditions</h5>
+                        <ul className='list-unstyled mb-0'>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Mention Légales
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Confidentialité
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Cookies
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Près de chez vous
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Crédits
+                                </a>
+                            </li>
+                        </ul>
+                    </MDBCol>
+                    <MDBCol className='col-md-3 offset-md-1'>
+                        <h5 className='fw-bold mb-4 footer-text'>Aide</h5>
+                        <ul className='list-unstyled mb-0'>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#!' className='footer-text'>
+                                Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </MDBCol>
+                </MDBRow>
+            </MDBContainer>
+            <MDBRow>
+                <div className='text-center p-4' style={{color:'#FFFFFF'}}>
+                    © 2022 Copyright
+                    <a className='text-reset fw-bold' href='https://lemplette.com/'> Lemplette</a>
+                </div>
+            </MDBRow>
+        </MDBFooter>
+    </div>
   )
 }
 
