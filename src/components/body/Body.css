@@ -23,6 +23,7 @@
 
 .row3-h1 {
     color: #ffffff;
+    font-size: 20px;
 }
 
 .img {
@@ -74,6 +75,7 @@
 
 .h3-black {
     color: #000000;
+    font-size: 20px;
 }
 
 .p-white {
@@ -82,4 +84,16 @@
 
 .p-black {
     color: #000000;
+}
+
+@media (max-width: 500px) {  
+    .responsive-image-body-width
+    {
+    width: 30%;
+    height: auto;
+    }
+    .responsive-text-center
+    {
+    text-align: center;
+    }
 }
