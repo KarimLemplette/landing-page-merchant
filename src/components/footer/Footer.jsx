@@ -14,7 +14,7 @@ function Footer () {
                     </h2>
                 </div>
             </MDBContainer>
-            <MDBContainer breakpoint="md">
+            <MDBContainer breakpoint="md" className='container-fluid'>
                 <MDBRow>
                     <MDBCol className='col-md-3 offset-md-1'>
                         <h5 className='fw-bold mb-4 footer-text'>À Propos</h5>
