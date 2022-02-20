@@ -20,40 +20,40 @@ function Header() {
                         <MDBCol size='md' className='col-md-6 order-sm-first order-last'>
                             <h1 className="header-h2 responsive-header-h2">L’<span style={{color: '#ffc107'}}>e</span>.Commerce Citoyen</h1>
                             <MDBRow className='d-flex mt-4 '>
-                                <MDBCol size='md' className='col-md-2 mt-5  '>
+                                <MDBCol className='col-2 mt-5  '>
                                 <img src={tick} className='img-fluid-tick responsive-img'/>
                                 </MDBCol>
-                                <MDBCol size='md' className='col-md-10 mt-5 '>
+                                <MDBCol  className='col-10 mt-5 text-wrap'>
                                     <p className="header-p responsive-header-p">
                                     Accédez à une clientèle soucieuse d’acheter local
                                     </p>
                                 </MDBCol>
                             </MDBRow>
                             <MDBRow className='d-flex'>
-                                <MDBCol size='md' className='col-md-2 t'>
+                                <MDBCol  className='col-2'>
                                 <img src={tick} className='img-fluid-tick responsive-img'/>
                                 </MDBCol>
-                                <MDBCol size='md' className='col-md-10 '>
+                                <MDBCol className='col-10 text-wrap '>
                                     <p className="header-p responsive-header-p">
                                     Échangez avec vos clients et comprenez leurs besoins
                                     </p>
                                 </MDBCol>
                             </MDBRow>
                             <MDBRow className='d-flex '>
-                                <MDBCol size='md' className='col-md-2 '>
+                                <MDBCol className='col-2 '>
                                 <img src={tick} className='img-fluid-tick  responsive-img'/>
                                 </MDBCol>
-                                <MDBCol size='md' className='col-md-10 '>
+                                <MDBCol className='col-10 text-wrap '>
                                     <p className="header-p responsive-header-p">
                                     Augmentez votre visibilité, vendez mieux !
                                     </p>
                                 </MDBCol>
                             </MDBRow>
                             <MDBRow className='d-flex'>
-                                <MDBCol size='md' className='col-md-2 '>
+                                <MDBCol className='col-2 '>
                                 <img src={tick} className='img-fluid-tick  responsive-img'/>
                                 </MDBCol>
-                                <MDBCol size='md' className='col-md-10 '>
+                                <MDBCol sclassName='col-10 text-wrap '>
                                     <p className="header-p responsive-header-p">
                                     Un site réservé aux commerçants avec des boutiques physiques
                                     </p>

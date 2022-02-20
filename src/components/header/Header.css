@@ -27,7 +27,7 @@
 }
     .responsive-header-h2
 {
-    margin-left: 14px;
+    margin-left: 20px;
     font-size: 50px;
 
 }
@@ -41,7 +41,7 @@
 }
 
 .responsive-img {
-    width: 10%;
+    width: 60%;
     height: auto;
   
 }
