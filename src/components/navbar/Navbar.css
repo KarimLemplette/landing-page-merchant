@@ -10,3 +10,13 @@
     font-size: 1vh;
 }
   }
+
+.btn-primary {
+  background-color: #1559e8;
+}
+.btn-warning {
+    background-color: #ffc107;
+  }
+  .btn-secondary {
+    background-color: #9155f1;
+  }

@@ -42,6 +42,7 @@ h2 {
   color: #000000
 }
 
+
 h3 {
   font-family: 'Roboto Black';
   font-size: 30px;
@@ -52,6 +53,9 @@ h3 {
 .btn-secondary {
   background-color: #9155F1;
 }
+
+
+
 
 @media (min-width: 500px) {  
   .container-fluid {

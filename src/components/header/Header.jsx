@@ -2,7 +2,8 @@ import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import './Header.css';
 import logo from '../../assets/logo.png';
-import background from '../../assets/bluetexture.jpg';
+import background from '../../assets/purpletexture.png';
+import tick from '../../assets/tick.png';
 import { Navbar } from '..';
 import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
@@ -18,21 +19,59 @@ function Header() {
                 <MDBRow className='d-flex align-items-center'>
                         <MDBCol size='md' className='col-md-6 order-sm-first order-last'>
                             <h1 className="header-h2 responsive-header-h2">L’<span style={{color: '#ffc107'}}>e</span>.Commerce Citoyen</h1>
-                            <p className="header-p responsive-header-p">
-                                Des centaines de commerces proches de
-                                chez vous ont déjà en stock le produit que vous souhaitez commander, demandez-leur
-                                directement grâce à Lemplette
-                            </p>
+                            <MDBRow className='d-flex mt-4 '>
+                                <MDBCol size='md' className='col-md-2 mt-5  '>
+                                <img src={tick} className='img-fluid-tick responsive-img'/>
+                                </MDBCol>
+                                <MDBCol size='md' className='col-md-10 mt-5 '>
+                                    <p className="header-p responsive-header-p">
+                                    Accédez à une clientèle soucieuse d’acheter local
+                                    </p>
+                                </MDBCol>
+                            </MDBRow>
+                            <MDBRow className='d-flex'>
+                                <MDBCol size='md' className='col-md-2 t'>
+                                <img src={tick} className='img-fluid-tick responsive-img'/>
+                                </MDBCol>
+                                <MDBCol size='md' className='col-md-10 '>
+                                    <p className="header-p responsive-header-p">
+                                    Échangez avec vos clients et comprenez leurs besoins
+                                    </p>
+                                </MDBCol>
+                            </MDBRow>
+                            <MDBRow className='d-flex '>
+                                <MDBCol size='md' className='col-md-2 '>
+                                <img src={tick} className='img-fluid-tick  responsive-img'/>
+                                </MDBCol>
+                                <MDBCol size='md' className='col-md-10 '>
+                                    <p className="header-p responsive-header-p">
+                                    Augmentez votre visibilité, vendez mieux !
+                                    </p>
+                                </MDBCol>
+                            </MDBRow>
+                            <MDBRow className='d-flex'>
+                                <MDBCol size='md' className='col-md-2 '>
+                                <img src={tick} className='img-fluid-tick  responsive-img'/>
+                                </MDBCol>
+                                <MDBCol size='md' className='col-md-10 '>
+                                    <p className="header-p responsive-header-p">
+                                    Un site réservé aux commerçants avec des boutiques physiques
+                                    </p>
+                                </MDBCol>
+                            </MDBRow>
                         </MDBCol>
+                        
                         <MDBCol size='md' className='col-md-5 mt-5 responsive-image-header-width'>
-                            <img src={logo} className='img-fluid'/>
+                            <MDBRow className='col-md-12 mt-5 mb-5 text-center'>
+                                <img src={logo} className='img-fluid'/>
+                            </MDBRow>
                         </MDBCol>
                 </MDBRow>
                 <MDBRow>
-                    <MDBCol size='md' className='col-md-12 mt-5 mb-5 text-center'>
-                        <MDBBtn rounded className='mx-2 btn btn-warning btn-lg font-weight-bold'>
-                            Déposer une demande
-                        </MDBBtn>
+                    <MDBCol size='md' className='col-md-12 mt-4 mb-5 text-center'>
+                    <MDBBtn rounded className='mx-2 btn btn-warning btn-lg font-weight-bold'>
+                                    Je me connecte
+                                </MDBBtn>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>

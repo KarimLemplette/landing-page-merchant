@@ -5,27 +5,41 @@ import bodyimg2 from '../../assets/bodyimg2.png';
 import number1 from '../../assets/number1.png';
 import number2 from '../../assets/number2.png';
 import number3 from '../../assets/number3.png';
-import search from '../../assets/search.png';
 import sourire from '../../assets/sourire.png';
-import background from '../../assets/bluetexture.jpg';
+import background1 from '../../assets/whitetexture.png';
+import background2 from '../../assets/purpletexture.png';
 import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdb-react-ui-kit';
 
 function Body() {
     return (
         <div className='body'>
+            <div style={{backgroundImage:`url(${background1})`}}>
             <MDBContainer breakpoint="md" className='container-fluid'>
                 <MDBRow className='d-flex align-items-center mb-3 mt-3'>
-                    <MDBCol size='md' className='col-md-6'>
+                    <MDBCol size='md' className='col-md-6 mt-2'>
                         <h2 className='body-h2'>
-                            L’article que vous recherchez
-                            est déjà dans <span style={{color: '#ffc107'}}>un commerce à proximité</span>
+                            Etre un 
+                            <span style={{color: '#ffc107'}}> Commerçant {"\n"}Lemplette</span>
                         </h2>
                         <p className='p-black'>
-                            Lemplette vous met en relation directe avec vos commerces locaux. 
-                            La majorité des commandes en ligne effectuées se 
-                            trouvent déjà probablement dans un des commerces qui vous entourent.
+                            
+                            <u> <i> {"\n"} Pour Lemplette, Etre citoyen c’est avant tout comprendre et interagir avec le monde qui nous entoure </i></u>
                         </p>
+                        <p className='p-black'>
+                        Etre un commerçant Lemplette, c’est faire partie d’un réseau de professionnels dont l’unique but est de dynamiser la vie locale, 
+                        et d’offrir plus d’interactions sociales entre chaque citoyen.
+                        </p>
+                        <MDBRow className='d-flex align-items-center mt-3'>
+                            <MDBCol size='md' className='col-md-4 text-center'>
+                            </MDBCol>
+                                <MDBCol size='md' className='col-md-7 mb-3 text-center'>
+                                    <MDBBtn rounded className='mx-2 btn btn-secondary' color='secondary'>
+                                        Lire notre manifesto
+                                    </MDBBtn>
+                                </MDBCol>
+                        </MDBRow>
                     </MDBCol>
+                    
                     <MDBCol className='col-md-5'>
                         <img src={bodyimg1} alt='' className='img-fluid' />
                     </MDBCol>
@@ -36,99 +50,86 @@ function Body() {
                     <MDBCol className='col-md-5 mt-3 order-sm-first order-last'>
                         <img src={bodyimg2} alt='' className='img-fluid'/>
                     </MDBCol>
-                    <MDBCol size='md' className='col-md-6 mt-3'>
-                        <h2 className='body-h2'>Réconcilier <span style={{color: '#ffc107'}}>local</span> <span style={{color: '#1558e8'}}>&</span> <span style={{color: '#ffc107'}}>digital</span></h2>
-                        <h3 className='h3-black'>Le <span style={{color: '#ffc107'}}>e</span>commerce à votre porte</h3>
+                    <MDBCol size='md' className='col-md-6 mt-5 mb-5'>
+                        <h2 className='body-h2'>Redéfinissez <span style={{color: '#ffc107'}}>votre {"\n"}zone de Chalandise</span> </h2>
+                        <h3 className='h3-black'>Développons ensemble un <span style={{color: '#ffc107'}}> e</span>commerce local</h3>
                         <p className='p-black'>
-                            Les commerces de proximité sont beaucoup moins visibles sur internet que les géants du e-commerce, 
-                            Lemplette offre aux commerçants une plateforme permettant de répondre en direct à toutes vos demandes.
+                        Avec Lemplette, nous permettons aux commerçants de se concentrer uniquement sur des achats à proximité de leur magasin, 
+                        et de ne plus se soucier d’une concurrence mondiale.
                         </p>
-                        <a href='/'> <u>Contacter des commerces environnants> </u></a>
+                        <a href='/'> <u>En savoir plus> </u></a>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
-            <div style={{ backgroundImage: `url(${background})` }}>
+            </div>
+            <div style={{ backgroundImage: `url(${background2})` }}>
                 <MDBContainer breakpoint="md" className='container-fluid'>
-                    <MDBRow>
-                        <MDBCol className='col-md-12 mt-5 text-center'>
-                            <h3 className='h3-white' style={{fontSize: 20}}>
-                                Lemplette, c’est un panier moyen de <span style={{color: '#ffc107',fontSize: 25}}>65 euros par clients</span>,
-                                des <span style={{color: '#ffc107',fontSize: 25 }}>dizaines de demandes</span> par jour près de chez vous
-                                <span style={{color: '#ffc107',fontSize: 25}}> 80 % de réussite</span> sur les produits que vous recherchez
-                                {"\n"} Et c’est surtout une activité économique <span style={{color: '#ffc107',fontSize: 25}}>locale</span>.
-                            </h3> 
-                         </MDBCol>
-                    </MDBRow>
-                    <MDBRow className='mt-3 mb-3'>
-                    <MDBCol className='col-md-12 mt-5 text-center'>
-                        <h2 className='h3-white'>
-                            Faites une demande{"\n"} en ligne
-                        </h2>
-                        </MDBCol>
-                        </MDBRow>
-                        <MDBRow className='mt-3 mb-3'>
-                        <MDBCol md="11">
-                            <h3 className='row3-h1' align='left'><u>Comment ca marche</u> ?</h3>
+                        <MDBRow className='mt-3 mb-3 '>
+                        <MDBCol md="11" className='mt-5 text-center'>
+                            <h1 className='' color=''> <span style={{color: '#ffffff'}}>Comment ca marche ? </span> </h1>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer> 
                 <MDBContainer breakpoint="md" className='container-fluid'>
                 <MDBRow className='mt-3 mb-3'>
-                    <MDBCol size='md'className='col-md-7' >
-                    <MDBRow className='mt-3 mb-3'>
+                    <MDBCol size='md'className='col-md-12' >
+                    <MDBRow className='mt-3 mb-3 align-items-center'>
                         <MDBCol size='md' className='col-md-2 responsive-image-body-width' >
                         <img src={number1} alt='' className='img-fluid'/>
                         </MDBCol>
                         <MDBCol className='col-md-9' >
-                        <p className='p-white'>Envoyez-nous une photo, un lien, une capture d’écran du produit recherché</p>
+                        <p className='p-white'>Vous recevez une demande de produit de la part d’un futur acheteur</p>
                         </MDBCol>
                     </MDBRow>
-                    <MDBRow className='mt-3 mb-3'>
-                    <MDBCol size='md' className='col-md-2 mt-2 responsive-image-body-width' >
+                    <MDBRow className='mt-3 mb-3 align-items-center'>
+                    <MDBCol size='md' className='col-md-2 mt-2 offset-md-3 responsive-image-body-width' >
                         <img src={number2} alt='' className='img-fluid'/>
                         </MDBCol>
-                        <MDBCol className='col-md-9 mt-2' >
-                        <p className='p-white'>En 24h, Les commerçants Lemplette vous garantissent une réponse sur le stock de votre produit, ou des produits similaires qui correspondent à votre recherche</p>
+                        <MDBCol className='col-md-6 mt-2 ' >
+                        <p className='p-white'>Vous indiquez la disponibilité de l’article dans votre boutique, 
+                                                ou un délai de réapprovisionnement sur ce produit. Vous pouvez aussi suggérer un produit aux caractéristiques similaires</p>
                         </MDBCol>
                     </MDBRow>
-                    <MDBRow className='mt-3 mb-3'>
+                    <MDBRow className='mt-5 mb-3 align-items-center'>
                     <MDBCol size='md' className='col-md-2 mt-2 responsive-image-body-width' >
                         <img src={number3} alt='' className='img-fluid'/>
                         </MDBCol>
                         <MDBCol className='col-md-9 mt-2' >
-                        <p className='p-white'>Payez via Lemplette et collectez votre produit chez un commerçant proche de chez vous</p>
+                        <p className='p-white'>L’acheteur se déplace récupérer le produit{"\n"}{"\n"}
+
+                                            La transaction se fait via Lemplette {"\n"}
+
+                                            Une nouvelle vente vient d’être faite</p>
                         </MDBCol>
                         
                        
                     </MDBRow>
                     </MDBCol>
-                    <MDBCol size='md' className='col-md-4 mt-3'>
-                        <img src={search} alt='' className='img-fluid'/>
-                    </MDBCol>
                 </MDBRow>
                 <MDBCol className='col-md-12 mt-5 mb-5'>
                     <MDBBtn rounded className='mx-2 mb-5 btn btn-warning btn-lg font-weight-bold'>
-                        Lancer une recherche
+                        Découvrir les étapes
                     </MDBBtn>
                 </MDBCol>
                 </MDBContainer> 
             </div>
+            <div style={{backgroundImage:`url(${background1})`}}>
             <MDBContainer breakpoint="sm" className='container-fluid'>
                 <MDBRow className='d-flex align-items-center mb-3'>
-                    <MDBCol size='md' className='col-md-6 offset-md-1 mt-2 mb-4 text-end'>
-                        <h2 class="responsive-text-center" style={{color:'#ffc107'}}>Des commerçants engagés</h2>
-                        <h3 className='h3-black responsive-text-center'>
-                        <span style={{color: '#ffc107'}}>"</span>
-                        <b>C’est moins cher en ligne</b>
-                        <span style={{color: '#ffc107'}}>”</span>
-                        </h3>
+                    <MDBCol size='md' className='col-md-6 offset-md-1 mt-2 mb-4 '>
+                        <h2 class="responsive-text-center" style={{color:'#ffc107'}}>L'ampleur<span style={{color: '#000000'}}> de </span>Lemplette</h2>
+                        <p  className='p-black responsive-text-center'><u>Développer une nouvelle dynamique </u></p>
                         <p className='p-black responsive-text-center'>
-                            Soyons honnête, le mythe du “c’est moins cher en ligne” 
-                            n’est plus d’actualité, les marques dictent les prix en ligne et en boutique, 
-                            Il est tout a fait possible de trouver des très bons prix en magasins et avec des 
-                            conseils avisés d’un détaillant près de chez vous... le sourire en plus (et pas sur le carton)
+                        Les commerçants qui utilisent Lemplette constatent une fréquentation en hausse de leur boutique. Lorsque l’acheteur vient récupérer son produit, 
+                        ce dernier à une meilleure connaissance du choix de produits que vous vendez.
                         </p>
-                        <a className='responsive-text-center' href='/'> <u> Déclenchez une recherche> </u></a>
+                        <p  className='p-black responsive-text-center'><u>Le Bouche à Oreille </u></p>
+                        <p className='p-black responsive-text-center'>
+                        Engager, mettre en avant vos réseaux sociaux, vous n’êtes pas à l’abri d’effectuer une vente complémentaire.
+                        </p>
+                        <MDBRow className='text-end'>
+                        <a className='responsive-text-center' href='/'> <u> Je veux en savoir plus> </u></a>
+                        </MDBRow>
                     </MDBCol>
                     <MDBCol className='col-md-5 mt-2 mb-4'>
                         <img src={sourire} alt='' className='img-fluid'/> 
@@ -136,6 +137,8 @@ function Body() {
                 </MDBRow>
             </MDBContainer> 
         </div>
+        </div>
+    
     )
 }
 
